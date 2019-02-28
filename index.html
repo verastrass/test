@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="MainCtrl">
+	<head>
+		<meta charset="UTF-8"></meta>
+		<title>{{json.headtitle}}</title>
+		<style type="text/css">
+			@font-face {
+				font-family: Pacifico;
+				src: url(fonts/Pacifico.ttf);
+			}
+			@font-face {
+				font-family: Helvectica;
+				src: url(fonts/HelvecticaNeue.ttf);
+			}
+			body {
+				background-color: white;
+				color: #848484;
+				max-width: 100%;
+				font-size: 100%;
+				margin: 0 auto;
+				padding: 0;
+				overflow: auto;
+			}
+			a {
+				text-decoration: none;
+				cursor: pointer;
+			}
+			p {
+				text-align: center;
+				line-height: 20pt;
+				font: 100% Helvetica, sans-serif;
+			}
+			h1 {
+				font: 570% Pacifico;
+				color: #ffffff;
+				text-align: left;
+				text-shadow: 3px 3px 2px #2772a4; 
+				margin-top: 15px;
+				margin-bottom: 25px;
+			}
+			header {
+				background: url(img/background.png);
+				background-repeat: repeat-x, repeat-y;
+				height: 510px;
+				padding-top: 95px;
+				padding-left: 13%;
+				padding-right: 3%;
+			}
+			.left_header {
+				display: inline-block;
+				float: left;
+				max-width: 35%;
+				height: auto;
+				margin-right: 3%;
+			}
+			.left_header p {
+				margin-bottom: 1.5%;
+				font: 150% Helvectica, sans-serif;
+				color: #ffffff;
+				text-shadow: 3px 3px 2px #2772a4;
+				display: block;
+				text-align: left;
+			}
+			.icons {
+				display: inline-block;
+				float: left;
+				margin-top: 7%;
+			}
+			.icon {
+				width: 53px;
+				height: 53px;
+				display: inline-block;
+				margin-right: 10px;
+				opacity: 0.5;
+			}
+			.icon:hover {
+				opacity: 1;
+			}
+			.right_header {
+				display: inline-block;
+				float: right;
+				max-width: 55%;
+				margin-left: 3%;
+			}
+			.right_header img {
+				max-width: 100%;
+				width: auto;
+				height: auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header>
+			<div class="left_header">
+				<a href="#/"><h1>{{json.leftheader.h1}}</h1></a>
+				<p>{{json.leftheader.p}}</p>
+				<div class="icons">
+					<div class="icon" ng-repeat="i in json.leftheader.icons">
+						<a href="#d"><img src="{{i}}" alt="icon"></a>
+					</div><!--icon-->
+				</div><!--icons-->
+			</div><!--left_header-->
+
+			<div class="right_header">
+				<img src="{{json.rightheader}}" alt="hand">
+			</div><!--right_header-->
+				
+			<nav class="menu">
+				<span id="menu_button" ng-mouseenter="button=true" ng-mouseleave="button=false"> &#9776 </span>
+				<ul id="navigation" ng-mouseenter="nav=true" ng-mouseleave="nav=false" ng-show="button || nav">
+					<li ng-repeat="i in json.references"><a href="#m">{{i}}</a></li>
+				</ul>
+			</nav><!--menu-->
+		</header>
+
+		<div ng-view></div>
+		
+		<footer>
+			<div class="references">
+				<ul>
+					<li ng-repeat="i in json.references"><a href="#m">{{i}}</a></li>
+				</ul>
+			</div><!--references-->
+		</footer>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="angular/angular.js"></script>
+		<script src="angular/angular-route.js"></script>
+		<script src="js/app.js"></script>		
+	</body>
+</html>

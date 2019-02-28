@@ -1,0 +1,141 @@
+{
+	"headtitle": "Craze",
+	
+	"leftheader": {
+		"h1": "Craze",
+		"p": "A great new free psd theme to showcase your new app.",
+		"icons": [
+			"img/apple.png",
+			"img/android.png",
+			"img/windows.png"
+		]
+	},
+	
+	"rightheader": "img/hand.png",
+	
+	"features": {
+		"h2": "Craze Features",
+		"p": "Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea."
+	},
+	
+	"featuresbar": {
+		"img": [
+			"img/flat_design.png",
+			"img/marketable.png",
+			"img/edit_photos.png",
+			"img/edit_colors.png",
+			"img/user_friendly.png",
+			"img/editable.png"
+		],
+		"h3": [
+			"Flat Disign",
+			"Marketable",
+			"Edit Photos",
+			"Edit Colors",
+			"User Friendly",
+			"100% Editable"
+		],
+		"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla."		
+	},
+	
+	"aboutcraze": {
+		"h2": "Whats Craze all About?",
+		"p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris.",
+		"p2": "Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.",
+		"ulli1": "Lorem ipsum dolor sit amet",
+		"ulli2": "Lorem ipsum dolor sit amet consectetur elt",
+		"video": ""
+	},
+	
+	"excerption": [
+		{
+			"p": "\"Craze is one of the most complete app packages I have ever come across. I would highly reccomend it to anyone!\"",			
+			"p_author": "Sarah Hunt"
+		},
+		{
+			"p": "\"It's so hard to forget pain, but it's even harder to remember sweetness. We have no scar to show for happiness. We learn so little from peace.\"",			
+			"p_author": "Chuck Palahniuk"
+		},
+		{
+			"p": "\"The trick is in what one emphasizes. We either make ourselves miserable, or we make ourselves happy. The amount of work is the same.\"",			
+			"p_author": "Carlos Castaneda"
+		}
+	],
+	
+	"pricingplans": {
+		"h2": "Pricing Plans",
+		"p": "Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr interesset ea."
+	},
+	
+	"tables": [
+		{
+			"head": "Basic",
+			"price1": "$19",
+			"price2": "99",
+			"tr1": "Feature 1",
+			"tr2": "Feature 2",
+			"tr3": "Feature 3",
+			"tr4": "Feature 4",
+			"tr5": "Feature 5",
+			"purchase": "purchase"
+		},
+		{
+			"head": "Standard",
+			"price1": "$39",
+			"price2": "99",
+			"tr1": "Feature 1",
+			"tr2": "Feature 2",
+			"tr3": "Feature 3",
+			"tr4": "Feature 4",
+			"tr5": "Feature 5",
+			"purchase": "purchase"
+		},
+		{
+			"head": "Deluxe",
+			"price1": "$59",
+			"price2": "99",
+			"tr1": "Feature 1",
+			"tr2": "Feature 2",
+			"tr3": "Feature 3",
+			"tr4": "Feature 4",
+			"tr5": "Feature 5",
+			"purchase": "purchase"
+		},
+		{
+			"head": "Unlimited",
+			"price1": "$79",
+			"price2": "99",
+			"tr1": "Feature 1",
+			"tr2": "Feature 2",
+			"tr3": "Feature 3",
+			"tr4": "Feature 4",
+			"tr5": "Feature 5",
+			"purchase": "purchase"
+		}		
+	],
+	
+	"purchasebutton": "Send!",
+	
+	"sayhi": {
+		"h2": "Say Hi & Get in Touch",
+		"p": "Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse."
+	},
+	
+	"socialmedia": [
+		"img/twitter.png",
+		"img/facebook.png",
+		"img/p.png",
+		"img/googleplus.png",
+		"img/in.png",
+		"img/youtube.png"
+	],
+	
+	"references": [
+		"Contact",
+		"Download",
+		"Press",
+		"Email",
+		"Support",
+		"Privacy Policy"
+	]
+}

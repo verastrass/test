@@ -1,0 +1,141 @@
+<div class="features">
+	<h2>{{json.features.h2}}</h2>
+	<p>{{json.features.p}}</p>			
+	<div class="features_bar">
+		<div class="features_bar1">
+			<a href="#/">
+				<img src="{{json.featuresbar.img[0]}}" alt="flat_design">
+				<h3>{{json.featuresbar.h3[0]}}</h3>
+			</a>
+			<p>{{json.featuresbar.p}}</p>
+		</div><!--features_bar1-->
+		<div class="vertical_border1"></div>
+		<div class="features_bar2">
+			<a href="#/">
+				<img src="{{json.featuresbar.img[1]}}" alt="marketable">
+				<h3>{{json.featuresbar.h3[1]}}</h3>
+			</a>	
+			<p>{{json.featuresbar.p}}</p>
+		</div><!--features_bar2-->
+		<div class="vertical_border2"></div>
+		<div class="features_bar3">
+			<a href="#/">
+				<img src="{{json.featuresbar.img[2]}}" alt="edit_photos">
+				<h3>{{json.featuresbar.h3[2]}}</h3>
+			</a>	
+			<p>{{json.featuresbar.p}}</p>			
+		</div><!--features_bar3-->
+		<div class="horizontal_border"></div>
+		<div class="horizontal_border"></div>
+		<div class="horizontal_border"></div>
+		<div class="features_bar4">
+			<a href="#/">
+				<img src="{{json.featuresbar.img[3]}}" alt="edit_colors">
+				<h3>{{json.featuresbar.h3[3]}}</h3>
+			</a>	
+			<p>{{json.featuresbar.p}}</p>
+		</div><!--features_bar4-->
+		<div class="vertical_border1"></div>
+		<div class="features_bar5">
+			<a href="#/">
+				<img src="{{json.featuresbar.img[4]}}" alt="user_friendly">
+				<h3>{{json.featuresbar.h3[4]}}</h3>
+			</a>	
+			<p>{{json.featuresbar.p}}</p>
+		</div><!--features_bar5-->
+		<div class="vertical_border2"></div>
+		<div class="features_bar6">
+			<a href="#/">
+				<img src="{{json.featuresbar.img[5]}}" alt="editable">
+				<h3>{{json.featuresbar.h3[5]}}</h3>
+			</a>
+			<p>{{json.featuresbar.p}}</p>				
+		</div><!--features_bar6-->
+	</div><!--features_bar-->					
+</div><!--features-->
+
+<div class="about_craze">
+	<div class="about_craze_text">
+		<h2>{{json.aboutcraze.h2}}</h2>
+		<p id="p1">{{json.aboutcraze.p1}}</p>
+		<p id="p2">{{json.aboutcraze.p2}}</p>
+		<ul>
+			<li id="li1">{{json.aboutcraze.ulli1}}</li>
+			<li id="li2">{{json.aboutcraze.ulli2}}</li>
+		</ul>
+	</div><!--about_craze_text-->
+	<div class="about_craze_video">
+		<video src="{{json.about_craze.video}}" controls poster="img/img.png"></video>
+	</div><!--about_craze_video-->
+</div><!--about_craze-->
+
+<div class="excerption" ng-repeat="(i, exc) in json.excerption" ng-show="i == slideIndex">
+	<p id="exc">{{exc.p}}</p>
+	<p class="author">{{exc.p_author}}</p>
+	<br/><br/>
+	<div class="circle" ng-class="{'circle--active': slideIndex == 0}" ng-click="changeSlide(0)"> </div>
+	<div class="circle" ng-class="{'circle--active': slideIndex == 1}" ng-click="changeSlide(1)"> </div>
+	<div class="circle" ng-class="{'circle--active': slideIndex == 2}" ng-click="changeSlide(2)"> </div>
+</div><!--excerption-->
+
+<div class="pricing_plans">
+	<h2>{{json.pricingplans.h2}}</h2>
+	<p>{{json.pricingplans.p}}</p>
+	<div class="tables">
+		<div class="pricing_plans_table" ng-repeat="i in json.tables" ng-class="{'pricing_plans_table--active ':onMouseTable}" ng-mouseenter="onMouseTable=true" ng-mouseleave="onMouseTable=false">
+			<div class="head"><p>{{i.head}}</p></div>
+			<div class="price">{{i.price1}}<sup>{{i.price2}}</sup></div>
+			<div class="table_tr"><p>{{i.tr1}}</p></div>
+			<div class="table_tr"><p>{{i.tr2}}</p></div>
+			<div class="table_tr"><p>{{i.tr3}}</p></div>
+			<div class="table_tr"><p>{{i.tr4}}</p></div>
+			<div class="table_tr"><p>{{i.tr5}}</p></div>
+			<div class="purchase"><a ng-click="purchaseClick()">
+			<div class="purchase_text"><p>{{i.purchase}}</p></div>
+			</a></div>
+		</div><!--pricing_plans_table-->
+	</div><!--tables-->
+</div><!--pricing_plans-->
+
+<div id="overlay_popup" ng-click="overlayClick()" ng-show="popupShow"></div><!--overlay_popup-->
+<div class="purchase_form" ng-show="popupShow">
+	<form id="popup" name="purForm" novalidate>
+		<input type="text" name="username" placeholder="Name" ng-model="username" required/><br/>
+		<span ng-show="purForm.username.$error.required">Fill the field above, please!</span>
+		
+		<input type="text" name="email" placeholder="Email" ng-model="useremail" required email-dir /><br/>
+		<span ng-show="purForm.email.$error.required">Fill the field above, please!</span>
+		<span ng-show="purForm.email.$invalid">Wrong email adress!</span>
+		
+		<input type="text" name="phone" placeholder="Phone number" ng-model="userphone" required phone-dir /><br/>
+		<span ng-show="purForm.phone.$error.required">Fill the field above, please!</span>
+		<span ng-show="purForm.phone.$invalid">Wrong phone number!</span>
+		
+		<input type="submit" class="pur_button" value="{{json.purchasebutton}}" ng-click="checkForm(purForm.email.$valid, purForm.phone.$valid)" ng-disabled="purForm.$invalid" />
+	</form>
+</div><!--purchase_form-->
+
+<div class="say_hi">
+	<h2>{{json.sayhi.h2}}</h2>
+	<p>{{json.sayhi.p}}</p>
+	<div class="social_media">
+		<div class="icon" id="twitter" ng-click="shareClick()">
+			<img src="{{json.socialmedia[0]}}" alt="twitter">
+		</div>
+		<div class="icon" id="facebook" ng-click="shareClick()">
+			<img src="{{json.socialmedia[1]}}" alt="facebook">
+		</div>
+		<div class="icon" id="p" ng-click="shareClick()">
+			<img src="{{json.socialmedia[2]}}" alt="p">
+		</div>
+		<div class="icon" id="googleplus" ng-click="shareClick()">
+			<img src="{{json.socialmedia[3]}}" alt="googleplus">
+		</div>
+		<div class="icon" id="in" ng-click="shareClick()">
+			<img src="{{json.socialmedia[4]}}" alt="in">
+		</div>
+		<div class="icon" id="youtube" ng-click="shareClick()">
+			<img src="{{json.socialmedia[5]}}" alt="youtube">
+		</div>
+	</div><!--social_media-->
+</div><!--say_hi-->

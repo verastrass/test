@@ -1,0 +1,666 @@
+@font-face {
+	font-family: MyriadPro;
+	src: url(../fonts/MyriadPro-Semibold.otf);
+}
+@font-face {
+	font-family: MyriadProBold;
+	src: url(../fonts/MyriadPro-Bold.otf);
+}
+@font-face {
+	font-family: Novocentowide;
+	src: url(../fonts/novecentowide-demibold.ttf);
+}
+
+h2 {
+	font: 220% MyriadPro, sans-serif;
+	color: #222222;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+h3 {
+	font: 170% MyriadPro, sans-serif;
+	color: #222222;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+li, .table_tr {
+	text-align: center;
+	line-height: 20pt;
+	font: 100% Helvetica, sans-serif;
+}
+
+nav {
+	display: block;
+	position: absolute;
+	right: 0%;
+	top: 0%;
+	width: 10%;
+}
+span {
+	display: block;
+	font-size: 250%;
+	text-align: right;
+	color: #ffffff;
+	width: 22%;
+	cursor: pointer;
+}
+nav ul {
+	visibility: visible;
+    margin: 0;
+    padding: 0;
+	transition: visibility .25s;
+}
+nav ul li {
+	float: bottom;
+	list-style-type: none;
+	width: 100%;
+	background: #ffffff;
+	border-top: solid;
+	border-top-color: #e3e3e3;
+	border-top-width: 2px;
+	text-align: center;
+}
+nav ul li a {
+	color: #3498db;
+	font: 120% Helvetica, sans-serif;
+	line-height: 20pt;
+}
+nav ul li a:hover {
+	color: #000000;
+}
+
+#download_button {
+	display: inline-block;
+	height: 150px;
+	padding-top: 5%;
+	max-width: 100%;
+	position: relative;
+	left: 40%;
+}
+#download_button form {
+	display: flex;
+	margin: auto;
+}
+#download_button button {
+	display: flex;
+	background: linear-gradient(to top, #3498db, #ffffff);
+	background-color: #ffffff;
+	border: 4px outset #0d74b9;
+	border-radius: 10px;
+	cursor: pointer;
+}
+#download_button button:hover {
+	opacity: 0.8;
+}
+#download_button button p {
+	color: #0d74b9;
+	font: 250% Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding: 0% 10%;
+}
+#menu_info {
+	display: block;
+	height: 200px;
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.features {
+	display: block;
+	height: 730px;
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.features_bar {
+	display: block;
+	height: 100% auto;
+	margin-top: 3%;
+}
+.features_bar1, .features_bar2, .features_bar3, .features_bar4, .features_bar5, .features_bar6 {
+	display: block;
+	float: left;
+	width: 28%;
+	height: auto;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	margin-top: 1%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.features_bar1 img, .features_bar2 img, .features_bar3 img, .features_bar4 img, .features_bar5 img, .features_bar6 img {
+	position: relative;
+	left: 43%;
+}
+.vertical_border1, .vertical_border2 {
+	display: inline-block;
+	position: absolute;
+	background: #e3e3e3;
+	height: 25%;
+	width: 2px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+.vertical_border1 {
+	left: 35%;
+}
+.vertical_border2 {
+	right: 39%;
+}
+.horizontal_border {
+	display: inline-block;
+	float: top;
+	background: #e3e3e3;
+	height: 2px;
+	width: 26%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.about_craze {
+	display: block;
+	height: 320px;
+	background: #e7e7e7;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 10%;
+	padding-top: 10%;
+}
+.about_craze_text {
+	display: block;
+	float: left;
+	width: 55%;
+}
+.about_craze_text h2, .about_craze_text p, .about_craze_text li  {
+	text-align: left;
+	margin-bottom: 3%;
+}
+.about_craze_text li {
+	background: url(../img/bullet.png) 0 50% no-repeat;
+	list-style-type: none;
+	padding-left: 3%;
+}
+.about_craze_video {
+	display: block;
+	position: relative;
+	top: 13%;
+	float: right;
+	width: 35%;
+}
+.about_craze_video video {
+	height: 250px;
+	width: 100%;
+}
+
+.excerption {
+	display: block;
+	height: 200px;
+	padding-left: 12%;
+	padding-right: 12%;
+	padding-bottom: 5%;
+	padding-top: 3%;
+}
+.excerption p {
+	font-style: italic;
+	font-size: 160%;
+	line-height: 32pt;
+}
+.excerption p.author {
+	text-align: center;
+	font: 120% MyriadPro, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.circle {
+	display: inline-block;
+	float: center;
+	background-color: #ffffff;
+	width: 10px;
+	height: 10px;
+	border: 3px solid #3498db;
+	border-radius: 10px;
+	position: relative;
+	left: 47%;
+}
+.circle:hover {
+	opacity: 0.5;
+}
+.circle--active {
+	background-color: #3498db;
+}
+.excerption img {
+	display: inline-block;
+	position: relative;
+	left: 47%;
+}
+
+.pricing_plans {
+	display: block;
+	height: 600px;
+	background: #e7e7e7;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+	padding-top: 3%;
+}
+.tables {
+	display: block;
+}
+.pricing_plans_table {
+	padding: 20px 0px 0px;
+	display: inline-block;
+	height: 400px;
+	width: 24%;
+	text-align: center;
+	margin-top: 1%;
+	margin-right: 1px;
+}
+.pricing_plans_table--active {
+	padding: 0px;
+	height: 420px;
+	transition: height .35s;
+}
+.head {
+	background: #3498db;
+	height: 17%;
+}
+.head p {
+	color: #ffffff;
+	font: 233.3% MyriadPro, sans-serif;
+	padding-top: 4%;
+}
+.price {
+	background: #ffffff;
+	color: #000000;
+	font: 350% Novocentowide, sans-serif;
+	height: 18%;
+}
+.table_tr {
+	background: #ffffff;
+	border-top: solid;
+	border-top-color: #e3e3e3;
+	border-top-width: 2px;
+	height: 10%;
+}
+.table_tr p {
+	color: #848484;
+}
+.purchase {
+	background: #3498db;
+	height: 18%;
+}
+.purchase_text {
+	display: block;
+	position: relative;
+	left: 15%;
+	top: 15%;
+	background: #0d74b9;
+	width: 70%;
+	height: 70%;
+}
+.purchase_text:hover {
+	opacity: 0.7;
+}
+.purchase_text p {
+	color: #ffffff;
+	font: 125% MyriadPro-Bold, sans-serif;
+	font-weight: bold;
+	font-variant: small-caps;
+	padding-top: 6%;
+	margin: 0%;
+}
+
+#overlay_popup {
+	visibility: visible;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #000000;
+	opacity: 0.5;
+}
+.purchase_form {
+	max-width: 360px;
+	visibility: visible;
+	position: fixed;
+	z-index: 1000;
+	top: 30%;
+	right: 0;
+	left: 37%;
+	bottom: 0;
+}
+#popup {
+	display: block;
+	background-color: #ffffff;
+	padding: 40px 30px;
+	max-width: 320px;
+	margin: auto;
+	position: relative;
+	z-index: 1001;
+}
+#popup span {
+	margin-bottom: 4px;
+	width: 100%;
+	text-align: left;
+	color: #3498db;
+	font: 100% MyriadPro-Bold, sans-serif;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+input {
+	margin-bottom: 4px;
+	width: 100%;
+}
+
+.say_hi {
+	background: #ffffff;
+	height: 200px;
+	width: 100% auto;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 3%;
+	padding-top: 5%;
+}
+.social_media {
+	display: block;
+	height: 100px;
+	width: 300px;
+	margin-top: 2%;
+	padding-left: 35%;
+	max-width: 100% auto;
+}
+.social_media .icon {
+	display: inline-block;
+	float: left;
+	background: #848484;
+	max-width: 40px;
+	max-height: 40px;
+	border-radius: 35px;
+}
+.social_media .icon:hover {
+	background: #3498db;
+}
+#twitter img, #googleplus img {
+	position: relative;
+	left: 28%;
+	top: 30%;
+}
+#facebook img {
+	position: relative;
+	left: 38%;
+	top: 30%;
+}
+#p img {
+	position: relative;
+	left: 27%;
+	top: 27%;
+}
+#in img {
+	position: relative;
+	left: 33%;
+	top: 27%;
+}
+#youtube img {
+	position: relative;
+	left: 27%;
+	top: 22%;
+}
+
+footer {
+	background: #e7e7e7;
+	height: 10%;
+	padding-left: 25%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+.references li {
+	display: inline-block;
+	margin-right: 1.5%;
+	margin-left: 1.5%;
+}
+.references a {
+	color: #848484;
+}
+
+@media (max-width: 800px) and (min-width: 720px) {	
+	header {
+		height: 400px;
+	}
+	nav ul li a {
+		font-size: 100%;
+	}
+	.features {
+		height: 900px;
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+	.vertical_border1, .vertical_border2, .horizontal_border {
+		display: none;
+	}
+	.features_bar1, .features_bar2, .features_bar3, .features_bar4, .features_bar5, .features_bar6 {
+		display: inline-block;
+		width: 42%;
+	}
+	.features_bar2, .features_bar4, .features_bar6 {
+		float: right;
+	}
+	.about_craze {
+		height: 600px;
+		padding-top: 1%;
+	}
+	.about_craze_text, .about_craze_video {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	.excerption {
+		height: 260px;
+	}
+	.pricing_plans {
+		height: 840px;
+	}
+	.pricing_plans_table {
+		width: 40%;
+		margin-right: 3%;
+		margin-left: 3%;
+		margin-bottom: 7%;
+		margin-top: 3%;
+		height: 300px;
+		font-size: 70%;
+	}
+	.pricing_plans_table--active {
+		padding: 0px;
+		height: 320px;
+		transition: height .35s;
+	}
+	.social_media {
+		padding-left: 26%;
+	}
+	footer {
+		padding-left: 10%;
+	}
+}
+
+@media (max-width: 720px) and (min-width: 480px) {
+	body {
+		font-size: 90%;
+	}
+	header {
+		height: 400px;
+		padding-top: 40px;
+	}	
+	.left_header{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	.right_header {
+		display: none;
+	}
+	nav {
+		width: 30%;
+	}
+	.features {
+		height: 900px;
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+	.vertical_border1, .vertical_border2, .horizontal_border {
+		display: none;
+	}	
+	.features_bar1, .features_bar2, .features_bar3, .features_bar4, .features_bar5, .features_bar6 {
+		display: inline-block;
+		width: 42%;
+	}
+	.features_bar2, .features_bar4, .features_bar6 {
+		float: right;
+	}
+	.about_craze {
+		height: 700px;
+		padding-top: 1%;
+	}
+	.about_craze_text, .about_craze_video {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	.excerption {
+		height: 300px;
+	}
+	.excerption img {
+		left: 43%;
+	}
+	.pricing_plans {
+		height: 840px;
+	}
+	.pricing_plans_table {
+		width: 40%;
+		margin-right: 3%;
+		margin-left: 3%;
+		margin-bottom: 7%;
+		margin-top: 3%;
+		height: 300px;
+		font-size: 70%;
+	}
+	.pricing_plans_table--active {
+		padding: 0px;
+		height: 320px;
+		transition: height .35s;
+	}
+	.say_hi {
+		height: 200px;
+	}
+	.social_media {
+		padding-left: 13%;
+		padding-right: 0;
+	}
+	.social_media .icon {
+		max-width: 100% auto;
+		max-height: 100% auto;
+		margin-right: 1px;
+	}
+	footer {
+		padding-left: 1%;
+	}
+	footer li {
+		margin-right: 0%;
+		margin-left: 0%;
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		font-size: 90%;
+	}
+	header {
+		height: 400px;
+		padding-top: 40px;
+	}	
+	.left_header{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	.right_header {
+		display: none;
+	}
+	nav {
+		width: 30%;
+	}
+	.features {
+		height: 1350px;
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+	.vertical_border1, .vertical_border2, .horizontal_border {
+		display: none;
+	}	
+	.features_bar1, .features_bar2, .features_bar3, .features_bar4, .features_bar5, .features_bar6 {
+		display: inline-block;
+		width: 100%;
+		float: left;
+	}
+	.about_craze {
+		height: 800px;
+		padding-top: 1%;
+	}
+	.about_craze_text, .about_craze_video {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	.excerption {
+		height: 400px;
+	}
+	.excerption img {
+		left: 43%;
+	}
+	.pricing_plans {
+		height: 1600px;
+	}
+	.pricing_plans_table {
+		display: block;
+		width: 80%;
+		margin-right: 3%;
+		margin-left: 10%;
+		margin-bottom: 10%;
+		margin-top: 10%;
+		height: 300px;
+		font-size: 70%;
+	}
+	.pricing_plans_table--active {
+		padding: 0px;
+		height: 320px;
+		transition: height .35s;
+	}
+	.say_hi {
+		height: 250px;
+	}
+	.social_media {
+		padding-left: 15%;
+		padding-right: 0%;
+	}
+	.social_media .icon {
+		margin-right: 1px;
+	}
+	footer {
+		padding-left: 0%;
+	}
+	footer li {
+		margin-right: 0%;
+		margin-left: 0%;
+		padding-right: 30px;
+	}
+}
